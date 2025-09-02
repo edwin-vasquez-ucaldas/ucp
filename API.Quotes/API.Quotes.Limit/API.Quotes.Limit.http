@@ -1,0 +1,6 @@
+@API.Quotes.Limit_HostAddress = http://localhost:5128
+
+GET {{API.Quotes.Limit_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
