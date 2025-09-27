@@ -1,0 +1,22 @@
+@OrdersProcessor.Service_HostAddress = https://localhost:7072
+
+# Test the Orders Processor Service API
+
+### Check service health
+GET {{OrdersProcessor.Service_HostAddress}}/api/orderprocessor/health
+
+### Get current order statistics
+GET {{OrdersProcessor.Service_HostAddress}}/api/orderprocessor/statistics
+
+### Get orders eligible for status updates
+GET {{OrdersProcessor.Service_HostAddress}}/api/orderprocessor/eligible-orders
+
+### Manually trigger order processing (for testing)
+POST {{OrdersProcessor.Service_HostAddress}}/api/orderprocessor/process-now
+
+###sProcessor.Service_HostAddress = http://localhost:5009
+
+GET {{OrdersProcessor.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

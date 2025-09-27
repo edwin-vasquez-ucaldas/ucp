@@ -1,0 +1,12 @@
+apiVersion: 1
+# Disabled for now to avoid provisioning errors
+# providers:
+#   - name: "orders-dashboards"
+#     orgId: 1
+#     folder: "Orders System"
+#     type: file
+#     disableDeletion: false
+#     updateIntervalSeconds: 10
+#     allowUiUpdates: true
+#     options:
+#       path: /etc/grafana/provisioning/dashboards

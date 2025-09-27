@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders.Api", "Orders.Api\Orders.Api.csproj", "{FAE82558-BF3E-4D1E-94C7-AC96CBA850BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdersProcessor.Service", "OrdersProcessor.Service\OrdersProcessor.Service.csproj", "{A9073DB6-932F-4EAA-B1BC-D249B78207F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAE82558-BF3E-4D1E-94C7-AC96CBA850BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAE82558-BF3E-4D1E-94C7-AC96CBA850BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAE82558-BF3E-4D1E-94C7-AC96CBA850BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAE82558-BF3E-4D1E-94C7-AC96CBA850BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9073DB6-932F-4EAA-B1BC-D249B78207F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9073DB6-932F-4EAA-B1BC-D249B78207F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9073DB6-932F-4EAA-B1BC-D249B78207F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9073DB6-932F-4EAA-B1BC-D249B78207F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63C486FF-5C8D-46E8-BD26-6122D80FA030}
+	EndGlobalSection
+EndGlobal

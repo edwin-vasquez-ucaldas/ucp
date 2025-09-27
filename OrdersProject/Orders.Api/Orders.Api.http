@@ -1,0 +1,64 @@
+@Orders.Api_HostAddress = https://localhost:7071
+
+# Test the Orders API
+
+### Get all orders
+GET {{Orders.Api_HostAddress}}/api/orders
+
+### Get orders with status filter
+GET {{Orders.Api_HostAddress}}/api/orders?status=1&pageNumber=1&pageSize=5
+
+### Get specific order by ID
+GET {{Orders.Api_HostAddress}}/api/orders/1
+
+### Create a new order
+POST {{Orders.Api_HostAddress}}/api/orders
+Content-Type: application/json
+
+{
+  "customerName": "Alice Johnson",
+  "customerEmail": "alice.johnson@example.com",
+  "shippingAddress": "789 Pine St, Newtown, NT 11111",
+  "totalAmount": 299.99,
+  "notes": "Rush order - please expedite",
+  "orderItems": [
+    {
+      "productName": "Premium Widget",
+      "productSku": "PWD-001",
+      "quantity": 3,
+      "unitPrice": 99.99
+    }
+  ]
+}
+
+### Update an order
+PUT {{Orders.Api_HostAddress}}/api/orders/1
+Content-Type: application/json
+
+{
+  "customerName": "John Doe Updated",
+  "status": 2,
+  "notes": "Updated customer information"
+}
+
+### Update order status only
+PATCH {{Orders.Api_HostAddress}}/api/orders/1/status
+Content-Type: application/json
+
+3
+
+### Get order statistics
+GET {{Orders.Api_HostAddress}}/api/orders/statistics
+
+### Soft delete (cancel) an order
+DELETE {{Orders.Api_HostAddress}}/api/orders/1
+
+### Hard delete an order (use with caution)
+DELETE {{Orders.Api_HostAddress}}/api/orders/1/hard
+
+###s.Api_HostAddress = http://localhost:5203
+
+GET {{Orders.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
